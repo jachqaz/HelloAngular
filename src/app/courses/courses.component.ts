@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {CoursesService} from './courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -9,8 +10,8 @@ export class CoursesComponent implements OnInit {
   title = 'List of course';
   courses;
 
-  // Logic for calling an HTTP service
-  constructor() {
+  constructor(service: CoursesService) {
+    this.courses = service.getCourses();
   }
 
   getTitle() {
