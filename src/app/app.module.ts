@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {CoursesComponent} from './courses/courses.component';
 import {CoursesService} from './courses/courses.service';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import {CoursesService} from './courses/courses.service';
     CoursesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     CoursesService

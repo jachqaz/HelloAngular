@@ -17,5 +17,5 @@
 <div (click)="onDivcClicked()">
   <button (click)="onSave($event)">Save</button>
 </div>
-<input (keyup.enter)="onKeyUp($event)"/>
-<input #email (keyup.enter)="onKeyUp(email.value)"/>
+<input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()"/>
+<input [(ngModel)]="email" (keyup.enter)=" onKeyUp()"/>

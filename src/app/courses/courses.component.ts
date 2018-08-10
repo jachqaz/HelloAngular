@@ -13,6 +13,8 @@ export class CoursesComponent implements OnInit {
   colSpan = 2;
   isActive = true;
 
+  email = 'me@example.com';
+
   onSave($event) {
     $event.stopPropagation();
     alert('Button was clicked' + $event);
@@ -32,7 +34,7 @@ export class CoursesComponent implements OnInit {
     alert('Div was clicked');
   }
 
-  onKeyUp(email) {
-    alert(email);
+  onKeyUp() {
+    alert(this.email);
   }
 }
