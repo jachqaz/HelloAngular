@@ -9,6 +9,7 @@ import {CoursesService} from './courses.service';
 export class CoursesComponent implements OnInit {
   title = 'List of course';
   courses;
+  imageUrl = 'http://dragonball.sullca.com/wp-content/uploads/2015/07/Dragon-Ball-Super-online.jpg';
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
