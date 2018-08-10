@@ -1,8 +1,15 @@
 <h2>
   COURSES
   <br/>
-  {{getTitle()}}
 </h2>
+{{course.title | uppercase | lowercase}}<br/>
+{{course.students | number}}<br/>
+{{course.rating | number:'2.1-1'}}<br/>
+{{course.price | currency:'AUD':true:'3.2-2'}}<br/>
+{{course.relaseDate | date:'shortDate'}}<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+  {{getTitle()}}
+
 <h2 [textContent]="title"></h2>
 <ul>
   <li *ngFor="let course of courses">{{course}}</li>
