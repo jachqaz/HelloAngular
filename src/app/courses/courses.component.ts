@@ -13,6 +13,10 @@ export class CoursesComponent implements OnInit {
   colSpan = 2;
   isActive = true;
 
+  onSave($event) {
+    $event.stopPropagation();
+    alert('Button was clicked' + $event);
+  }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
@@ -22,5 +26,9 @@ export class CoursesComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onDivcClicked() {
+    alert('Div was clicked');
   }
 }

@@ -14,4 +14,6 @@
     <td [attr.colspan]="colSpan"></td>
   </tr>
 </table>
-<button [style.backgroundColor]="isActive ? 'blue': 'white'">Save</button>
+<div (click)="onDivcClicked()">
+  <button (click)="onSave($event)">Save</button>
+</div>
