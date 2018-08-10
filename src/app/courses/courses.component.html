@@ -17,4 +17,5 @@
 <div (click)="onDivcClicked()">
   <button (click)="onSave($event)">Save</button>
 </div>
-<input (keyup.enter)="onKeyUp()"/>
+<input (keyup.enter)="onKeyUp($event)"/>
+<input #email (keyup.enter)="onKeyUp(email.value)"/>

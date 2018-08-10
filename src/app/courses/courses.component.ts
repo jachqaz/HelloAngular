@@ -32,7 +32,7 @@ export class CoursesComponent implements OnInit {
     alert('Div was clicked');
   }
 
-  onKeyUp() {
-    alert('Enter was pressed');
+  onKeyUp(email) {
+    alert(email);
   }
 }
