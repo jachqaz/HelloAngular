@@ -31,4 +31,8 @@ export class CoursesComponent implements OnInit {
   onDivcClicked() {
     alert('Div was clicked');
   }
+
+  onKeyUp() {
+    alert('Enter was pressed');
+  }
 }
