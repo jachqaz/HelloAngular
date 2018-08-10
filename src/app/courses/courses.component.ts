@@ -11,7 +11,7 @@ export class CoursesComponent implements OnInit {
   courses;
   imageUrl = 'http://dragonball.sullca.com/wp-content/uploads/2015/07/Dragon-Ball-Super-online.jpg';
   colSpan = 2;
-  isActive = false;
+  isActive = true;
 
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
