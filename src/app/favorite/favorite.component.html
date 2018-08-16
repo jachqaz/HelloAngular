@@ -1,3 +1,12 @@
-<p>
-  favorite works!
-</p>
+<!--<span class="icon-ic_star_border_black_24dp"-->
+<!--[class.icon-ic_star_border_black_24dp]="isFavorite"-->
+<!--[class.icon-ic_star_border_black_24dp]="isFavorite"-->
+<!--(click)="onClick()"></span>-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<i class="material-icons" *ngIf="isFavorite==true" (click)="onClick()">
+  star
+</i>
+<i class="material-icons" *ngIf="isFavorite==false" (click)="onClick()">
+  star_border
+</i>
