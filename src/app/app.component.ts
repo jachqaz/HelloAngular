@@ -7,5 +7,10 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  canSave = true;
+  task = {
+    title: 'Review applications',
+    assignee: {
+      name: 'John Smith'
+    }
+  };
 }
