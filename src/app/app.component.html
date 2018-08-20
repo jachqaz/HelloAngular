@@ -1,6 +1,6 @@
 <button (click)="onAdd()">Add</button>
 <ul>
-  <li *ngFor="let course of courses; index as i">
+  <li *ngFor="let course of courses; trackBy: trackCourse();index as i; ">
     {{i}} - {{course.name}}
     <button (click)="onRemove(course)">Remove</button>
     <button (click)="onChange(course)">Update</button>
