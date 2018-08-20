@@ -1,5 +1,10 @@
-<!--<div *ngIf="courses.length > 0; else noCourses"> List of Courses</div>-->
-<ng-template [ngIf]="courses.length>0">
-  <div>List of courses</div>
-</ng-template>
-<ng-template [ngIf]="!(courses.length>0)">No courses</ng-template>
+<!--[style.backgroundColor]="canSave ? 'blue':'gray'"-->
+<!--[style.Color]="canSave ? 'white':'black'"-->
+<!--[style.fontWeight]="canSave ? 'bold':'normal'"-->
+<button ngStyle="{
+'backgroundColor':canSave ? 'blue':'gray',
+'Color':canSave ? 'white':'black',
+'fontWeight':canSave ? 'bold':'normal'
+}">
+  Save
+</button>
